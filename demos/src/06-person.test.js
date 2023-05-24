@@ -2,13 +2,17 @@ const Person = require('./06-person');
 
 describe('Test for Person', () =>{
   let person;
+  // Arrange / Given
   beforeEach(() => {
     person = new Person('Nicolas', 45, 1.7);
   });
 
   test('should return down', () =>{
+    // Arrange / Given
     person.weight = 45;
+    // Act / When
     const imc = person.calcIMC();
+    // Assert / Then
     expect(imc).toBe('down');
   });
 
