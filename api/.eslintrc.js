@@ -13,5 +13,6 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    'import/no-unresolved': ['error', { devDependencies: true}],
   },
 };
